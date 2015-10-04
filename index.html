@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Responsive Tabs -- Anup Pandey</title>
+		<link rel="stylesheet" href="./css/responsive-tabs.css">
+	</head>
+
+	<body>
+		<div id="respTabs">
+			<div>
+				<h2>About</h2>
+				<div>
+					<p>Hey, you are seeing a demo of Responsive Tabs jQuery plugin (developed by Anup Pandey).</p> 
+					<p>This plugin makes any markup of yours into Responsive Tabs. On mobile, the tabs are converted into dropdown!</p>
+					<p>To know how to use this plugin, see "How to use" tab!</p>
+					<p> To know about Anup Pandey: </p>
+					<ul>
+						<li><strong><a href="http://www.linkedin.com/in/pandeyanupj" target="_blank">LinkedIn</a></strong></li>
+						<li><strong><a href="http://www.angel.co/anup-pandey" target="_blank">Angel.co</a></strong></li>
+						<li><strong><a href="http://www.twitter.com/thepuccacritic" target="_blank">Twitter</a></strong></li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<h2>How to use</h2>
+				<div>
+					To use this plugin, simply:<br/>
+					<ol>
+						<li>Call method <code>responsiveTabs()</code> from your script to the markup you want to make as Responsive Tabs<br/>
+						For example: <code>$('#respTabs').responsiveTabs()</code> in this case</li><br/>
+						<li> You can set one of the tabs as the default tab you want to see as the active tab when you land on the page. <br/>
+						To know how, see "Default" tab </li>
+					</ol>
+				</div>
+			</div>
+			<div resp-tab="default">
+				<h2>Default</h2>
+				<div>
+					Hello, I've been set as default by adding the attribute 
+						<code>resp-tab = "default"</code> 
+						in my parent div <br/>
+						See tab "How to use" to know how!
+				</div>
+			</div>
+			<div>
+				<h2>JSFiddle</h2>
+				<div>
+					Here's the same demo on <a href="http://jsfiddle.net/pandeyanupj/pgaa9yha/1/" target="_blank"> JSFiddle </a> 
+				</div>
+			</div>
+		</div>
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="./js/responsiveTabs.js"></script>  
+		<script type="text/javascript">
+			$('#respTabs').responsiveTabs();
+		</script>
+	</body>
+</html>
